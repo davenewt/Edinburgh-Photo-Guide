@@ -12,6 +12,17 @@
 		63EB7A1B1C737B4F0070354A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EB7A191C737B4F0070354A /* Main.storyboard */; };
 		63EB7A1D1C737B4F0070354A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63EB7A1C1C737B4F0070354A /* Assets.xcassets */; };
 		63EB7A201C737B4F0070354A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EB7A1E1C737B4F0070354A /* LaunchScreen.storyboard */; };
+		63EB7A2F1C7383050070354A /* ArthursSeat.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 63EB7A281C7383050070354A /* ArthursSeat.JPG */; };
+		63EB7A311C7383050070354A /* CaltonHill.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 63EB7A2A1C7383050070354A /* CaltonHill.JPG */; };
+		63EB7A321C7383050070354A /* InverleithPark.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 63EB7A2B1C7383050070354A /* InverleithPark.JPG */; };
+		63EB7A331C7383050070354A /* MerchantsGolfclub.png in Resources */ = {isa = PBXBuildFile; fileRef = 63EB7A2C1C7383050070354A /* MerchantsGolfclub.png */; };
+		63EB7A351C7383050070354A /* NelsonsMonument.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 63EB7A2E1C7383050070354A /* NelsonsMonument.JPG */; };
+		63EB7A371C7385E70070354A /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB7A361C7385E70070354A /* WhiteButton.swift */; };
+		63EB7A391C738EAA0070354A /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB7A381C738EAA0070354A /* DetailVC.swift */; };
+		63EB7A3B1C7398AF0070354A /* WhiteTabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB7A3A1C7398AF0070354A /* WhiteTabButton.swift */; };
+		63EB7A401C739FBE0070354A /* CustomSegueFromRightToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB7A3F1C739FBE0070354A /* CustomSegueFromRightToLeft.swift */; };
+		63EB7A421C73A1B10070354A /* TransparentTabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB7A411C73A1B10070354A /* TransparentTabButton.swift */; };
+		63EB7A441C73A2090070354A /* HeadingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EB7A431C73A2090070354A /* HeadingLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +33,17 @@
 		63EB7A1C1C737B4F0070354A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63EB7A1F1C737B4F0070354A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63EB7A211C737B4F0070354A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63EB7A281C7383050070354A /* ArthursSeat.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ArthursSeat.JPG; sourceTree = "<group>"; };
+		63EB7A2A1C7383050070354A /* CaltonHill.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CaltonHill.JPG; sourceTree = "<group>"; };
+		63EB7A2B1C7383050070354A /* InverleithPark.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InverleithPark.JPG; sourceTree = "<group>"; };
+		63EB7A2C1C7383050070354A /* MerchantsGolfclub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MerchantsGolfclub.png; sourceTree = "<group>"; };
+		63EB7A2E1C7383050070354A /* NelsonsMonument.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NelsonsMonument.JPG; sourceTree = "<group>"; };
+		63EB7A361C7385E70070354A /* WhiteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
+		63EB7A381C738EAA0070354A /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		63EB7A3A1C7398AF0070354A /* WhiteTabButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhiteTabButton.swift; sourceTree = "<group>"; };
+		63EB7A3F1C739FBE0070354A /* CustomSegueFromRightToLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegueFromRightToLeft.swift; sourceTree = "<group>"; };
+		63EB7A411C73A1B10070354A /* TransparentTabButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentTabButton.swift; sourceTree = "<group>"; };
+		63EB7A431C73A2090070354A /* HeadingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadingLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +76,57 @@
 		63EB7A141C737B4F0070354A /* Edinburgh Photo Guide */ = {
 			isa = PBXGroup;
 			children = (
+				63EB7A3D1C739C150070354A /* Model */,
+				63EB7A3C1C739BFB0070354A /* View */,
+				63EB7A3E1C739C270070354A /* Controller */,
+				63EB7A271C7383050070354A /* Original images */,
 				63EB7A151C737B4F0070354A /* AppDelegate.swift */,
-				63EB7A171C737B4F0070354A /* ViewController.swift */,
 				63EB7A191C737B4F0070354A /* Main.storyboard */,
 				63EB7A1C1C737B4F0070354A /* Assets.xcassets */,
 				63EB7A1E1C737B4F0070354A /* LaunchScreen.storyboard */,
 				63EB7A211C737B4F0070354A /* Info.plist */,
 			);
 			path = "Edinburgh Photo Guide";
+			sourceTree = "<group>";
+		};
+		63EB7A271C7383050070354A /* Original images */ = {
+			isa = PBXGroup;
+			children = (
+				63EB7A281C7383050070354A /* ArthursSeat.JPG */,
+				63EB7A2A1C7383050070354A /* CaltonHill.JPG */,
+				63EB7A2B1C7383050070354A /* InverleithPark.JPG */,
+				63EB7A2C1C7383050070354A /* MerchantsGolfclub.png */,
+				63EB7A2E1C7383050070354A /* NelsonsMonument.JPG */,
+			);
+			path = "Original images";
+			sourceTree = "<group>";
+		};
+		63EB7A3C1C739BFB0070354A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63EB7A361C7385E70070354A /* WhiteButton.swift */,
+				63EB7A3A1C7398AF0070354A /* WhiteTabButton.swift */,
+				63EB7A3F1C739FBE0070354A /* CustomSegueFromRightToLeft.swift */,
+				63EB7A411C73A1B10070354A /* TransparentTabButton.swift */,
+				63EB7A431C73A2090070354A /* HeadingLabel.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		63EB7A3D1C739C150070354A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		63EB7A3E1C739C270070354A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63EB7A171C737B4F0070354A /* ViewController.swift */,
+				63EB7A381C738EAA0070354A /* DetailVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +188,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63EB7A321C7383050070354A /* InverleithPark.JPG in Resources */,
+				63EB7A2F1C7383050070354A /* ArthursSeat.JPG in Resources */,
 				63EB7A201C737B4F0070354A /* LaunchScreen.storyboard in Resources */,
+				63EB7A351C7383050070354A /* NelsonsMonument.JPG in Resources */,
+				63EB7A331C7383050070354A /* MerchantsGolfclub.png in Resources */,
 				63EB7A1D1C737B4F0070354A /* Assets.xcassets in Resources */,
+				63EB7A311C7383050070354A /* CaltonHill.JPG in Resources */,
 				63EB7A1B1C737B4F0070354A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +207,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				63EB7A181C737B4F0070354A /* ViewController.swift in Sources */,
+				63EB7A391C738EAA0070354A /* DetailVC.swift in Sources */,
+				63EB7A401C739FBE0070354A /* CustomSegueFromRightToLeft.swift in Sources */,
+				63EB7A3B1C7398AF0070354A /* WhiteTabButton.swift in Sources */,
+				63EB7A371C7385E70070354A /* WhiteButton.swift in Sources */,
+				63EB7A441C73A2090070354A /* HeadingLabel.swift in Sources */,
 				63EB7A161C737B4F0070354A /* AppDelegate.swift in Sources */,
+				63EB7A421C73A1B10070354A /* TransparentTabButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +330,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dwstroud.Edinburgh-Photo-Guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -265,6 +342,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dwstroud.Edinburgh-Photo-Guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

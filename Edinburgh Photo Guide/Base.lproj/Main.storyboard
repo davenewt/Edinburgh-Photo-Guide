@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Edinburgh_Photo_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,307 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArthursSeat.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="v20-xd-NJW">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edinburgh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXt-iS-pEf">
+                                <rect key="frame" x="20" y="40" width="305" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="305" id="8Rn-jq-RoA"/>
+                                    <constraint firstAttribute="height" constant="80" id="MdE-XK-jAb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="65"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Oee-2e-cEX" userLabel="ButtonsStackView">
+                                <rect key="frame" x="20" y="130" width="290" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4Q-4Q-qTQ" customClass="WhiteButton" customModule="Edinburgh_Photo_Guide" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="Icm-Pd-m3l"/>
+                                            <constraint firstAttribute="height" constant="45" id="XgW-GH-PNz"/>
+                                            <constraint firstAttribute="width" constant="164" id="pB3-79-nj4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <size key="titleShadowOffset" width="0.0" height="2.2250738585072014e-308"/>
+                                        <state key="normal" title="About Edinburgh">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" red="0.72549019607843135" green="0.81176470588235294" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="XgW-GH-PNz"/>
+                                                <exclude reference="pB3-79-nj4"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="TRz-Ab-oQK" kind="show" id="l7x-HZ-RcK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QF6-Zd-2gF" customClass="WhiteButton" customModule="Edinburgh_Photo_Guide" customModuleProvider="target">
+                                        <rect key="frame" x="170" y="0.0" width="120" height="50"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="RIS-jU-8ix"/>
+                                            <constraint firstAttribute="width" constant="120" id="W4B-kX-PQZ"/>
+                                            <constraint firstAttribute="width" constant="133" id="dC2-GQ-WHi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <size key="titleShadowOffset" width="0.0" height="2.2250738585072014e-308"/>
+                                        <state key="normal" title="View Photos">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" red="0.72549019609999998" green="0.81176470590000005" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="RIS-jU-8ix"/>
+                                                <exclude reference="dC2-GQ-WHi"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="505-Xw-vwl"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME TO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEf-Ij-fVc">
+                                <rect key="frame" x="22" y="30" width="305" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="305" id="HSq-5c-wKU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="IcI-Nj-GDF"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="305" id="uxp-j2-7cq"/>
+                                    <constraint firstAttribute="height" constant="20" id="z6Q-aK-g55"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IcI-Nj-GDF"/>
+                                        <exclude reference="uxp-j2-7cq"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OEf-Ij-fVc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="2Mc-GW-RbJ"/>
+                            <constraint firstItem="iXt-iS-pEf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Noy-9H-qVu"/>
+                            <constraint firstItem="Oee-2e-cEX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="WmK-uf-Tt2"/>
+                            <constraint firstAttribute="trailing" secondItem="v20-xd-NJW" secondAttribute="trailing" id="XNd-8Z-FBP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="v20-xd-NJW" secondAttribute="bottom" id="buh-AQ-Rv5"/>
+                            <constraint firstItem="OEf-Ij-fVc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="22" id="cpN-55-Dzk"/>
+                            <constraint firstItem="Oee-2e-cEX" firstAttribute="top" secondItem="iXt-iS-pEf" secondAttribute="bottom" constant="10" id="dH2-tB-kXg"/>
+                            <constraint firstItem="iXt-iS-pEf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="mOy-wd-hMb"/>
+                            <constraint firstItem="v20-xd-NJW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mhP-2Q-jJf"/>
+                            <constraint firstItem="v20-xd-NJW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xcR-nZ-wES"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="aboutEdinburghBtn" destination="f4Q-4Q-qTQ" id="Fbp-hg-pkj"/>
+                        <outlet property="viewPhotosBtn" destination="QF6-Zd-2gF" id="uTc-De-QWm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="458"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="vtF-GQ-TNv">
+            <objects>
+                <viewController id="TRz-Ab-oQK" customClass="DetailVC" customModule="Edinburgh_Photo_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EIV-mI-ACl"/>
+                        <viewControllerLayoutGuide type="bottom" id="aaw-q8-fKz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nNr-KZ-Wpe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MerchantsGolfclub.png" translatesAutoresizingMaskIntoConstraints="NO" id="0K4-Fz-sfe">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="csT-Of-KLS"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0n-hO-q5w" customClass="TransparentTabButton" customModule="Edinburgh_Photo_Guide" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="115" width="100" height="35"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="KT9-pt-7gs"/>
+                                    <constraint firstAttribute="width" constant="100" id="lbk-SS-4dd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <size key="titleShadowOffset" width="0.0" height="2.2250738585072014e-308"/>
+                                <state key="normal" title="⬅︎ BACK">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.72549019609999998" green="0.81176470590000005" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="V7g-Dy-qek" kind="unwind" unwindAction="unwindAction:" id="kRb-te-qQG"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yZH-YL-8Uj">
+                                <rect key="frame" x="20" y="168" width="210" height="82"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="psJ-OM-9Q0">
+                                        <rect key="frame" x="0.0" y="0.0" width="210" height="37"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOUNDED" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPy-GV-2w9" customClass="HeadingLabel" customModule="Edinburgh_Photo_Guide" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="210" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="210" id="bkQ-Ei-TKy"/>
+                                                    <constraint firstAttribute="height" constant="15" id="ve0-xb-AeE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prior to 7th century AD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="um6-CM-YLu">
+                                                <rect key="frame" x="0.0" y="19" width="210" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="210" id="NPu-Jz-yuL"/>
+                                                    <constraint firstAttribute="height" constant="18" id="oFU-ri-2Zo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ahD-Mq-MYe">
+                                        <rect key="frame" x="0.0" y="45" width="150" height="37"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POPULATION" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyt-dz-5Mf" customClass="HeadingLabel" customModule="Edinburgh_Photo_Guide" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="EH5-Mf-KYI"/>
+                                                    <constraint firstAttribute="width" constant="150" id="uOi-f8-yZO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="492,680" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9w-WD-bxu">
+                                                <rect key="frame" x="0.0" y="19" width="150" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="d8l-9y-Z8b"/>
+                                                    <constraint firstAttribute="width" constant="150" id="gCC-4k-POG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="218" y="0.0" width="150" height="37"/>
+                                        </variation>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="psJ-OM-9Q0" firstAttribute="top" secondItem="yZH-YL-8Uj" secondAttribute="top" constant="20" id="7NV-Je-1Jn"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7NV-Je-1Jn"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact" axis="horizontal" misplaced="YES">
+                                    <rect key="frame" x="20" y="166" width="368" height="37"/>
+                                </variation>
+                                <variation key="widthClass=regular" axis="horizontal"/>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpb-mt-3YC">
+                                <rect key="frame" x="14" y="293" width="566" height="287"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Edinburgh is the capital city of Scotland, located in Lothian on the southern shore of the Firth of Forth. 
+
+It is the second most populous city in Scotland and the seventh most populous in the United Kingdom. 
+
+Edinburgh lies at the heart of the Edinburgh &amp; South East Scotland City region. Recognised as the capital of Scotland since at least the 15th century, Edinburgh is home to the Scottish Parliament and the seat of the monarchy in Scotland. 
+
+The city is also the annual venue of the General Assembly of the Church of Scotland and home to national institutions such as the National Museum of Scotland, the National Library of Scotland and the Scottish National Gallery. It is the largest financial centre in the UK after London.</mutableString>
+                                <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="15" y="289" width="565" height="91"/>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ABOUT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFS-Ku-tWc" customClass="HeadingLabel" customModule="Edinburgh_Photo_Guide" customModuleProvider="target">
+                                <rect key="frame" x="20" y="270" width="150" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="JI0-KZ-DIm"/>
+                                    <constraint firstAttribute="width" constant="150" id="kAL-gM-cG1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="268" width="150" height="15"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT EDINBURGH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNe-Fc-FwT">
+                                <rect key="frame" x="20" y="35" width="560" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="305" id="GYh-qF-ffU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="SQX-vq-Qau"/>
+                                    <constraint firstAttribute="height" constant="80" id="gj1-UG-oIb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="305" id="kPd-Dp-Bd7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GYh-qF-ffU"/>
+                                        <exclude reference="SQX-vq-Qau"/>
+                                        <exclude reference="kPd-Dp-Bd7"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="20" y="31" width="760" height="87"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nFS-Ku-tWc" firstAttribute="leading" secondItem="nNr-KZ-Wpe" secondAttribute="leading" constant="20" id="0I3-JI-ctK"/>
+                            <constraint firstItem="0K4-Fz-sfe" firstAttribute="top" secondItem="nNr-KZ-Wpe" secondAttribute="top" id="4mv-hz-t4q"/>
+                            <constraint firstItem="O0n-hO-q5w" firstAttribute="leading" secondItem="nNr-KZ-Wpe" secondAttribute="leading" id="6q9-Vl-Kum"/>
+                            <constraint firstAttribute="trailing" secondItem="sNe-Fc-FwT" secondAttribute="trailing" constant="20" id="8ho-bY-wHF"/>
+                            <constraint firstItem="O0n-hO-q5w" firstAttribute="bottom" secondItem="0K4-Fz-sfe" secondAttribute="bottom" id="AxE-pZ-nz8"/>
+                            <constraint firstItem="jpb-mt-3YC" firstAttribute="top" secondItem="nFS-Ku-tWc" secondAttribute="bottom" constant="6" id="Dzn-TZ-uyW"/>
+                            <constraint firstItem="sNe-Fc-FwT" firstAttribute="centerX" secondItem="nNr-KZ-Wpe" secondAttribute="centerX" id="JMU-UA-av6"/>
+                            <constraint firstItem="nFS-Ku-tWc" firstAttribute="top" secondItem="yZH-YL-8Uj" secondAttribute="bottom" constant="20" id="KKk-3P-et7"/>
+                            <constraint firstItem="aaw-q8-fKz" firstAttribute="top" secondItem="jpb-mt-3YC" secondAttribute="bottom" constant="20" id="cm8-aP-8eJ"/>
+                            <constraint firstItem="sNe-Fc-FwT" firstAttribute="centerY" secondItem="0K4-Fz-sfe" secondAttribute="centerY" id="jZf-cU-XOG"/>
+                            <constraint firstAttribute="trailing" secondItem="0K4-Fz-sfe" secondAttribute="trailing" id="lcn-ne-gCA"/>
+                            <constraint firstItem="jpb-mt-3YC" firstAttribute="leading" secondItem="nNr-KZ-Wpe" secondAttribute="leading" constant="15" id="mTE-AY-UdJ"/>
+                            <constraint firstAttribute="trailing" secondItem="jpb-mt-3YC" secondAttribute="trailing" constant="20" id="q5N-KQ-Oqh"/>
+                            <constraint firstItem="sNe-Fc-FwT" firstAttribute="leading" secondItem="nNr-KZ-Wpe" secondAttribute="leading" constant="20" id="u8g-Bw-xxO"/>
+                            <constraint firstItem="0K4-Fz-sfe" firstAttribute="leading" secondItem="nNr-KZ-Wpe" secondAttribute="leading" id="uBm-DT-nRf"/>
+                            <constraint firstItem="yZH-YL-8Uj" firstAttribute="top" secondItem="0K4-Fz-sfe" secondAttribute="bottom" constant="25" id="uDj-Ou-dKD"/>
+                            <constraint firstItem="yZH-YL-8Uj" firstAttribute="leading" secondItem="nNr-KZ-Wpe" secondAttribute="leading" constant="20" id="xzL-kz-iNP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aboutTxtView" destination="jpb-mt-3YC" id="y5v-ln-jlj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kf6-N9-xXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="V7g-Dy-qek" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1039" y="457"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ArthursSeat.JPG" width="2446" height="2446"/>
+        <image name="MerchantsGolfclub.png" width="13620" height="3110"/>
+    </resources>
 </document>

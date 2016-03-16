@@ -234,13 +234,13 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpb-mt-3YC">
                                 <rect key="frame" x="14" y="293" width="566" height="287"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Edinburgh is the capital city of Scotland, located in Lothian on the southern shore of the Firth of Forth. 
+                                <string key="text">Edinburgh is the capital city of Scotland, located in Lothian on the southern shore of the Firth of Forth. 
 
 It is the second most populous city in Scotland and the seventh most populous in the United Kingdom. 
 
 Edinburgh lies at the heart of the Edinburgh &amp; South East Scotland City region. Recognised as the capital of Scotland since at least the 15th century, Edinburgh is home to the Scottish Parliament and the seat of the monarchy in Scotland. 
 
-The city is also the annual venue of the General Assembly of the Church of Scotland and home to national institutions such as the National Museum of Scotland, the National Library of Scotland and the Scottish National Gallery. It is the largest financial centre in the UK after London.</mutableString>
+The city is also the annual venue of the General Assembly of the Church of Scotland and home to national institutions such as the National Museum of Scotland, the National Library of Scotland and the Scottish National Gallery. It is the largest financial centre in the UK after London.</string>
                                 <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
